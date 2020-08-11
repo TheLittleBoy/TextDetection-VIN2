@@ -1,0 +1,20 @@
+{
+    "scale": [
+        0.01712475383166,
+        0.01750700280112,
+        0.01742919389978
+    ], 
+    "img_mean": [
+        123.675, 
+        116.28, 
+        103.53
+    ], 
+    "height": 960,
+    "width": 960,
+    "channelOrder": "CHW",
+    "colorFormat": "BGR",
+
+    "thresholdRec": 0.3, 
+    "max_size":960,
+    "extra": {"fluid": {"quantization": "fp32", "optType": "nb"}}
+}

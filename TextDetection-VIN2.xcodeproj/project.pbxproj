@@ -8,20 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		0448DD1A24E238570021B6CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0448DD1924E238570021B6CC /* AppDelegate.m */; };
-		0448DD1D24E238570021B6CC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0448DD1C24E238570021B6CC /* SceneDelegate.m */; };
 		0448DD2024E238570021B6CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0448DD1F24E238570021B6CC /* ViewController.m */; };
 		0448DD2324E238570021B6CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0448DD2124E238570021B6CC /* Main.storyboard */; };
 		0448DD2524E2385A0021B6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0448DD2424E2385A0021B6CC /* Assets.xcassets */; };
 		0448DD2824E2385A0021B6CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0448DD2624E2385A0021B6CC /* LaunchScreen.storyboard */; };
 		0448DD2B24E2385A0021B6CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0448DD2A24E2385A0021B6CC /* main.m */; };
+		0448DD3324E238D40021B6CC /* VINDetectionViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0448DD3224E238D40021B6CC /* VINDetectionViewController.mm */; };
+		0448DD4524E23B2F0021B6CC /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0448DD4424E23B2F0021B6CC /* CoreML.framework */; };
+		0448DD4824E23B460021B6CC /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0448DD4724E23B460021B6CC /* AssetsLibrary.framework */; };
+		0448DD4D24E2476F0021B6CC /* libEasyDL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0448DD4924E23D530021B6CC /* libEasyDL.a */; };
+		0448DD4E24E247780021B6CC /* libpaddle_api_full_bundled.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0448DD4A24E23D530021B6CC /* libpaddle_api_full_bundled.a */; };
+		0448DD4F24E247810021B6CC /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0448DD4624E23B390021B6CC /* libc++.tbd */; };
+		0448DD5124E247AB0021B6CC /* scanSuccess.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0448DD5024E247AB0021B6CC /* scanSuccess.wav */; };
+		0448DD5224E247F00021B6CC /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0448DD4424E23B2F0021B6CC /* CoreML.framework */; };
+		0448DD5524E24B990021B6CC /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0448DD4B24E23D530021B6CC /* opencv2.framework */; };
+		0448DD5624E24B990021B6CC /* opencv2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0448DD4B24E23D530021B6CC /* opencv2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0448DD5F24E24CEF0021B6CC /* easyedge in Resources */ = {isa = PBXBuildFile; fileRef = 0448DD5E24E24CEF0021B6CC /* easyedge */; };
+		0448DD6124E263EB0021B6CC /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0448DD6024E263EB0021B6CC /* Vision.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0448DD5724E24B990021B6CC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0448DD5624E24B990021B6CC /* opencv2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0448DD1524E238570021B6CC /* TextDetection-VIN2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TextDetection-VIN2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0448DD1824E238570021B6CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0448DD1924E238570021B6CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0448DD1B24E238570021B6CC /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		0448DD1C24E238570021B6CC /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		0448DD1E24E238570021B6CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0448DD1F24E238570021B6CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0448DD2224E238570021B6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +52,17 @@
 		0448DD2724E2385A0021B6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0448DD2924E2385A0021B6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0448DD2A24E2385A0021B6CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0448DD3124E238D40021B6CC /* VINDetectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VINDetectionViewController.h; sourceTree = "<group>"; };
+		0448DD3224E238D40021B6CC /* VINDetectionViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VINDetectionViewController.mm; sourceTree = "<group>"; };
+		0448DD4424E23B2F0021B6CC /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		0448DD4624E23B390021B6CC /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0448DD4724E23B460021B6CC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		0448DD4924E23D530021B6CC /* libEasyDL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEasyDL.a; path = LIB/lib/libEasyDL.a; sourceTree = "<group>"; };
+		0448DD4A24E23D530021B6CC /* libpaddle_api_full_bundled.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpaddle_api_full_bundled.a; path = LIB/lib/libpaddle_api_full_bundled.a; sourceTree = "<group>"; };
+		0448DD4B24E23D530021B6CC /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = LIB/lib/opencv2.framework; sourceTree = "<group>"; };
+		0448DD5024E247AB0021B6CC /* scanSuccess.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = scanSuccess.wav; sourceTree = "<group>"; };
+		0448DD5E24E24CEF0021B6CC /* easyedge */ = {isa = PBXFileReference; lastKnownFileType = folder; path = easyedge; sourceTree = "<group>"; };
+		0448DD6024E263EB0021B6CC /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +70,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0448DD4F24E247810021B6CC /* libc++.tbd in Frameworks */,
+				0448DD5224E247F00021B6CC /* CoreML.framework in Frameworks */,
+				0448DD5524E24B990021B6CC /* opencv2.framework in Frameworks */,
+				0448DD4524E23B2F0021B6CC /* CoreML.framework in Frameworks */,
+				0448DD6124E263EB0021B6CC /* Vision.framework in Frameworks */,
+				0448DD4E24E247780021B6CC /* libpaddle_api_full_bundled.a in Frameworks */,
+				0448DD4824E23B460021B6CC /* AssetsLibrary.framework in Frameworks */,
+				0448DD4D24E2476F0021B6CC /* libEasyDL.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +87,10 @@
 		0448DD0C24E238570021B6CC = {
 			isa = PBXGroup;
 			children = (
+				0448DD3424E23A900021B6CC /* RES */,
 				0448DD1724E238570021B6CC /* TextDetection-VIN2 */,
 				0448DD1624E238570021B6CC /* Products */,
+				0448DD4024E23AF90021B6CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,17 +107,40 @@
 			children = (
 				0448DD1824E238570021B6CC /* AppDelegate.h */,
 				0448DD1924E238570021B6CC /* AppDelegate.m */,
-				0448DD1B24E238570021B6CC /* SceneDelegate.h */,
-				0448DD1C24E238570021B6CC /* SceneDelegate.m */,
 				0448DD1E24E238570021B6CC /* ViewController.h */,
 				0448DD1F24E238570021B6CC /* ViewController.m */,
+				0448DD3124E238D40021B6CC /* VINDetectionViewController.h */,
+				0448DD3224E238D40021B6CC /* VINDetectionViewController.mm */,
 				0448DD2124E238570021B6CC /* Main.storyboard */,
 				0448DD2424E2385A0021B6CC /* Assets.xcassets */,
 				0448DD2624E2385A0021B6CC /* LaunchScreen.storyboard */,
+				0448DD5024E247AB0021B6CC /* scanSuccess.wav */,
 				0448DD2924E2385A0021B6CC /* Info.plist */,
 				0448DD2A24E2385A0021B6CC /* main.m */,
 			);
 			path = "TextDetection-VIN2";
+			sourceTree = "<group>";
+		};
+		0448DD3424E23A900021B6CC /* RES */ = {
+			isa = PBXGroup;
+			children = (
+				0448DD5E24E24CEF0021B6CC /* easyedge */,
+			);
+			path = RES;
+			sourceTree = "<group>";
+		};
+		0448DD4024E23AF90021B6CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0448DD6024E263EB0021B6CC /* Vision.framework */,
+				0448DD4924E23D530021B6CC /* libEasyDL.a */,
+				0448DD4A24E23D530021B6CC /* libpaddle_api_full_bundled.a */,
+				0448DD4B24E23D530021B6CC /* opencv2.framework */,
+				0448DD4724E23B460021B6CC /* AssetsLibrary.framework */,
+				0448DD4624E23B390021B6CC /* libc++.tbd */,
+				0448DD4424E23B2F0021B6CC /* CoreML.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +153,7 @@
 				0448DD1124E238570021B6CC /* Sources */,
 				0448DD1224E238570021B6CC /* Frameworks */,
 				0448DD1324E238570021B6CC /* Resources */,
+				0448DD5724E24B990021B6CC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +201,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0448DD5F24E24CEF0021B6CC /* easyedge in Resources */,
+				0448DD5124E247AB0021B6CC /* scanSuccess.wav in Resources */,
 				0448DD2824E2385A0021B6CC /* LaunchScreen.storyboard in Resources */,
 				0448DD2524E2385A0021B6CC /* Assets.xcassets in Resources */,
 				0448DD2324E238570021B6CC /* Main.storyboard in Resources */,
@@ -148,8 +218,8 @@
 			files = (
 				0448DD2024E238570021B6CC /* ViewController.m in Sources */,
 				0448DD1A24E238570021B6CC /* AppDelegate.m in Sources */,
+				0448DD3324E238D40021B6CC /* VINDetectionViewController.mm in Sources */,
 				0448DD2B24E2385A0021B6CC /* main.m in Sources */,
-				0448DD1D24E238570021B6CC /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,10 +361,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CX9724CS5M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"${PROJECT_DIR}/LIB/lib",
+					"$(PROJECT_DIR)/LIB/lib",
+				);
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/LIB/include";
 				INFOPLIST_FILE = "TextDetection-VIN2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"${PROJECT_DIR}/LIB/lib",
+					"$(PROJECT_DIR)/LIB/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.edu-edu.TextDetection-VIN2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -308,10 +388,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CX9724CS5M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"${PROJECT_DIR}/LIB/lib",
+					"$(PROJECT_DIR)/LIB/lib",
+				);
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/LIB/include";
 				INFOPLIST_FILE = "TextDetection-VIN2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"${PROJECT_DIR}/LIB/lib",
+					"$(PROJECT_DIR)/LIB/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.edu-edu.TextDetection-VIN2";
 				PRODUCT_NAME = "$(TARGET_NAME)";

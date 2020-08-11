@@ -1,0 +1,11 @@
+{
+  "product": "EasyEdge-Free",
+  "releaseId": 1,
+  "modelId": 1,
+  "modelType": 100,
+  "modelName": "百度超轻量级中文OCR",
+  "platform": "ios",
+  "soc": "arm",
+  "modelEnc": 0,
+  "modelCert": "free"
+}
