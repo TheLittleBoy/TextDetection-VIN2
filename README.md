@@ -3,6 +3,8 @@ iOS使用飞桨OCR文字识别，实现离线扫描VIN码，免费，并且效�
 
 飞桨官网：https://www.paddlepaddle.org.cn
 
+EasyEdge官网：https://ai.baidu.com/easyedge
+
 官网OCR demo：https://ai.baidu.com/easyedge/app/openSource
 
 lib文件中包含opencv2.framework等文件，200M，请耐心下载。
