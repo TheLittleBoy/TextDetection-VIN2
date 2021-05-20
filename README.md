@@ -7,6 +7,8 @@ iOS使用飞桨OCR文字识别，实现离线扫描VIN码，免费，并且效�
 
 lib文件中包含opencv2.framework等文件，200M，请耐心下载。
 
+经过验证，不可以在 Build Settings下Other Linker Flags里面加-ObjC标志，否则libEasyDL.a会报错。
+
 
 效果图：
 
